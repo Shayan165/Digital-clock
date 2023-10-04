@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 4rem;
+}
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.card {
+  padding: 30px;
+  box-shadow: 2px 2px 5px 1px gold;
+  border: 10px solid thistle;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: fit-content;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 5px 1px gold;
+}
+.card span {
+  font-size: 70px;
+  padding: 0 40px;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
